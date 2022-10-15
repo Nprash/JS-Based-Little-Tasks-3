@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <style>
+        /* external css: flickity.css */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        .carousel {
+            background: #FAFAFA;
+        }
+
+        .carousel-cell {
+            width: 66%;
+            height: 200px;
+            margin-right: 10px;
+            background: #8C8;
+            border-radius: 5px;
+            counter-increment: carousel-cell;
+        }
+
+        /* cell number */
+        /* .carousel-cell:before {
+            display: block;
+            text-align: center;
+            content: counter(carousel-cell);
+            line-height: 200px;
+            font-size: 80px;
+            color: white;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <h1>Flickity - freeScroll, wrapAround</h1>
+
+    <!-- Flickity HTML init -->
+    <div class="carousel" data-flickity='{ "freeScroll": true, "wrapAround": true }'>
+        <div class="carousel-cell">
+            <img src="https://source.unsplash.com/800x600/?food" alt="">
+        </div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+    </div>
+
+    <div class="forexample">
+        <div class="listofitems">
+            <div class="h1"></div>
+        </div>
+    </div>
+
+    <img src="" alt="">
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+
+</html>
